@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotted Thirds Sampler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="site.js"></script>
+    
+
+    <style>
+        @font-face {
+            font-family: Sassoon;
+            src: url(fonts/sassoon-infant.woff2);
+        }
+
+        body {
+            height:1024px;
+            background-color:steelblue;
+            color:white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        button, input {
+            font-size:12pt;
+            padding:5px;
+            font-weight:bold;
+            padding:10px;
+        }
+
+        #dotted-thirds {
+            background-color:#F5F3EF;
+            padding:10px;
+            border-radius: 5px;
+            margin:10px;
+        }
+
+        #dotted-thirds p {
+            font-family: "Sassoon", cursive;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-size:84pt;
+            margin:10px;
+            color:black;
+        }
+
+        .writing {
+            padding-top:29px;
+            
+        }
+
+        .writing p {
+            line-height: 128px;
+            background-image: url(background_sassoon.png);
+            background-repeat: repeat;
+            background-size: auto 128px;
+            width:100%;
+        }
+
+        a {
+            background-color:white;
+            color:coral;
+            padding:3px;
+            border-radius:3px;
+            font-weight:bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Dotted Thirds Sampler</h1>
+        <p>Welcome to the dotted thirds sampler. Simply hit "Speak", and use your voice to produce a dotted thirds sample of your choosing. Alternatively, hit "Type" to enter some words manually.</p>
+        <div>
+            <button id="listen">🎙️ Speak</button>
+            <button id="type">⌨️ Type</button>
+            <input type="text" id="textInput"/>
+        </div>
+    </div>
+    <div id="dotted-thirds">
+        <div class="background"></div>
+        <div class="writing">
+            <p id="output">
+                I went to the park and I saw a cat.
+            </p>
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            This tool was developed by Dwain Bunker to assist staff of Orchard Park Primary School and is offered free of charge. If you would like to say thank you, you could buy me a coffee via <a href="https://www.paypal.com/donate/?hosted_button_id=6QY7TWU3A3Z2A">🔗 this link</a>, or scan the QR below.
+        </p>
+        <img src="donate_qr.png" />
+    </div>
+</body>
+</html>
